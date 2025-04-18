@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(8px + 1.5vmin); /* reduced */
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn2,
+.btn3 {
+  margin-left: 1.2%; /* slightly reduced */
+}
+
+.textFormContainer {
+  margin-bottom: 30px; /* reduced */
+}
+
+.textFormContainer1 {
+  padding-bottom: 60px; /* reduced */
+}
+
+/* === Added smaller sizing styles === */
+.textFormContainer h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#myBox {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  height: 140px;
+}
+
+button.btn {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  margin: 4px 4px 0 0;
+}
+
+.textFormContainer h2 {
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+}
+
+.textFormContainer p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
