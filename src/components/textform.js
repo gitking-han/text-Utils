@@ -69,25 +69,25 @@ export default function TextForm(props) {
             }}
           ></textarea>
         </div>
-        <button className="btn btn-primary" onClick={handleUpClick}>
+        <button disabled={text.length===0} className="btn btn-primary" onClick={handleUpClick}>
           Convert to upper case
         </button>
-        <button className="btn btn-primary btn2" onClick={handleLowClick}>
+        <button disabled={text.length===0} className="btn btn-primary btn2" onClick={handleLowClick}>
           Convert to Lower case
         </button>
-        <button className="btn btn-primary btn3" onClick={handleCopy}>
+        <button disabled={text.length===0} className="btn btn-primary btn3" onClick={handleCopy}>
           Copy Text
         </button>
-        <button className="btn btn-primary btn3" onClick={handleClearClick}>
+        <button disabled={text.length===0} className="btn btn-primary btn3" onClick={handleClearClick}>
           Clear Text
         </button>
-        <button className="btn btn-primary btn3" onClick={handleSpeakClick}>
+        <button disabled={text.length===0} className="btn btn-primary btn3" onClick={handleSpeakClick}>
           Speak Test
         </button>
-        <button className="btn btn-primary btn3" onClick={handleStopSpeakClick}>
+        <button disabled={text.length===0} className="btn btn-primary btn3" onClick={handleStopSpeakClick}>
           Stop Speak Test
         </button>
-        <button className="btn btn-primary btn3" onClick={handleExtraSpaces}>
+        <button disabled={text.length===0} className="btn btn-primary btn3" onClick={handleExtraSpaces}>
           Delete Extra Spaces
         </button>
       </div>
@@ -101,9 +101,9 @@ export default function TextForm(props) {
               } characters`}
         </p>
 
-        <p>{text.split(" ").length * 0.08} Minutes Read</p>
+        <p>{text.split(" ").filter((element) => {return element.length!==0}).length * 0.08} Minutes Read</p>
         <h2>Preview</h2>
-        <p>{text.length > 0 ? text : "Enter something to preview here."}</p>
+        <p>{text.length > 0 ? text : "Nothing to preview."}</p>
       </div>
       {/* <div className="container mb-3 textFormContainer1">
         <h2>Find and Replace</h2>

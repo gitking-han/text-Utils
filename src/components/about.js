@@ -36,7 +36,7 @@ export default function About(props) {
               aria-controls="collapseOne"
               style={myStyle}
             >
-              Accordion Item #1
+              Analyze text
             </button>
           </h2>
           <div
@@ -45,7 +45,7 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={myStyle}>
-              <strong>This is the first item's content.</strong> It changes style based on the selected theme.
+              <strong>Quickly inspect and transform your text with smart tools for analysis and cleanup.</strong>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function About(props) {
               aria-controls="collapseTwo"
               style={myStyle}
             >
-              Accordion Item #2
+              Free to use
             </button>
           </h2>
           <div
@@ -71,7 +71,7 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={myStyle}>
-              <strong>This is the second item's content.</strong> You can write anything you like here.
+              <strong>Enjoy full features at no cost—no sign-up, no hidden charges.</strong>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function About(props) {
               aria-controls="collapseThree"
               style={myStyle}
             >
-              Accordion Item #3
+              Browser Compatible
             </button>
           </h2>
           <div
@@ -97,7 +97,7 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={myStyle}>
-              <strong>This is the third item's content.</strong> Still styled with your selected theme.
+              <strong>Runs smoothly on all modern browsers without any installations.</strong>
             </div>
           </div>
         </div>
