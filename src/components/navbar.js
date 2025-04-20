@@ -10,18 +10,21 @@ export default function Navbar(props) {
           ? "navbar-light bg-light"
           : props.mode === "dark"
           ? "navbar-dark bg-dark"
-          : props.mode === "green"
-          ? "navbar-dark"
-          : "navbar-light"
+          : "navbar-dark"
       }`}
       style={{
         backgroundColor:
           props.mode === "green"
-            ? "#013220"
+            ? "#025f37" // different than body green (#013220)
             : props.mode === "yellow"
-            ? "#fff9d6"
+            ? "#f4c542" // different than body yellow (#fff9d6)
             : undefined,
-        color: props.mode === "yellow" ? "#333" : undefined,
+        color:
+          props.mode === "yellow"
+            ? "#333"
+            : props.mode === "green"
+            ? "white"
+            : undefined,
       }}
     >
       <div className="container-fluid">
@@ -47,7 +50,7 @@ export default function Navbar(props) {
               </Link>
             </li>
             <li className="nav-item list-unstyled">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link active" to="/about">
                 {props.aboutText}
               </Link>
             </li>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"; // Only import here
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom"; // Only import here
 
 import "./App.css";
 import Navbar from "./components/navbar";
@@ -50,7 +50,7 @@ function App() {
 
   return (
     <>
-       <BrowserRouter>
+       <HashRouter>
       <Navbar title="textutils2" aboutText="About us" mode={mode} setTheme={setTheme} />
       <Alert alert={alert} />
       <div className="container my-3">
@@ -65,11 +65,11 @@ function App() {
               />
             }
           />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About mode={mode} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
     </>
   );
 }
